@@ -16,12 +16,7 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/DinhPhuc/windows-rdp/main/wallpaper.png -OutFile wallpaper.png
         Invoke-WebRequest https://raw.githubusercontent.com/DinhPhuc/windows-rdp/main/wallpaper.bat -OutFile wallpaper.bat
         Invoke-WebRequest https://raw.githubusercontent.com/DinhPhuc/windows-rdp/main/loop.bat -OutFile loop.bat
-    - name: Download Launcher.
-      run: |
-        Invoke-WebRequest https://unanimated-dittos.000webhostapp.com/Trash/telegram_icon-icons.com_72055.ico -OutFile "c:\tg.ico"
-        Invoke-WebRequest https://unanimated-dittos.000webhostapp.com/Trash/sellix-logos-idEokOde4t.ico -OutFile "c:\sl.ico"
-        Invoke-WebRequest https://unanimated-dittos.000webhostapp.com/Trash/tg.url -OutFile "TG Group.url"
-        Invoke-WebRequest https://unanimated-dittos.000webhostapp.com/Trash/MRX-Hacking.url -OutFile "Sellix Store.url"
+    
     - name: Extract Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect Ngrok.
